@@ -12,27 +12,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-white border-bottom border-dark fixed-top">
-    <div class="container">
-        <img src="{% static 'favicon.ico' %}" alt="" width="40", height="40">
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">Обо мне</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Мои проекты</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
 
 <main class="container">
-    <div class="row justify-content-center mt-large">
+    <div class="row mt-large">
         <div class="col-6 mt-medium">
             <h1 class="huge"><strong>Сиденко Олег</strong></h1>
             <div class="row">
@@ -72,9 +54,9 @@
             </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-md-6 col-4 float-end">
             <div class="float-end">
-                <img src="{% static 'photo.png' %}" alt="Не загрузилось:(">
+                <img src="{% static 'photo.png' %}" class="img-fluid" alt="Не загрузилось:(">
             </div>
         </div>
         <hr class="mt-medium border border-1 border-dark opacity-100" id="about">
@@ -105,8 +87,8 @@
     <hr class="mt-medium border border-1 border-dark opacity-100" id="projects">
 
 
-    <div class="row mt-medium">
-        <h1 class="huge"><strong>Пройденные мной курсы:</strong></h1>
+    <div class="row mt-small">
+        <h1 class="huge"><strong>Образование:</strong></h1>
         <ul class="list-group list-group-flush">
             <li class="list-group-item fs-4">
                 <strong><a
@@ -133,13 +115,14 @@
             </li>
         </ul>
     </div>
+    <hr class="mt-small border border-1 border-dark opacity-100" id="projects">
 
     <div class="row mt-small">
         <h1 class="huge"><strong>Разработанные проекты:</strong></h1>
         <ul class="list-group list-group-flush">
             <li class="list-group-item fs-4">
                 <strong><a
-                        href="https://lyceum.yandex.ru/certificate/check/?certNumber=220242426&lastName=%D0%A1%D0%B8%D0%B4%D0%B5%D0%BD%D0%BA%D0%BE"
+                        href="https://github.com/h4x4d/FilmFinder"
                         target="_blank" class="text-black">FilmFinder</a></strong>
                 - проект для Олимпиады “Шаг в Будущее: Инженерное дело” (победитель).
                 <br>
@@ -161,7 +144,7 @@
             </li>
             <li class="list-group-item fs-4">
                 <strong><a
-                        href="https://lyceum.yandex.ru/certificate/check/?certNumber=220242426&lastName=%D0%A1%D0%B8%D0%B4%D0%B5%D0%BD%D0%BA%D0%BE"
+                        href="https://github.com/h4x4d/DBrowser"
                         target="_blank" class="text-black">DBrowser</a></strong>
                 - проект для Лицея Академии Яндекса.
                 <br>
@@ -171,7 +154,7 @@
             </li>
             <li class="list-group-item fs-4">
                 <strong><a
-                        href="https://lyceum.yandex.ru/certificate/check/?certNumber=220242426&lastName=%D0%A1%D0%B8%D0%B4%D0%B5%D0%BD%D0%BA%D0%BE"
+                        href="https://github.com/h4x4d/Flask-Eisenhower-Matrix"
                         target="_blank" class="text-black">Eisenhower-Matrix</a></strong>
                 - проект для Лицея Академии Яндекса.
                 <br>
@@ -206,6 +189,20 @@
 
 </main>
 
+<div class="container fs-3">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">Сиденко Олег</p>
+
+        <ul class="nav col-md-5 justify-content-end">
+            <li class="nav-item">Github: <a href="https://github.com/h4x4d"
+                                            class=" px-2 text-muted">h4x4d</a></li>
+            <li class="nav-item"><a href="mailto:sidenkoleg@gmail.com" class="px-2 text-muted">sidenkoleg@gmail.com</a>
+            </li>
+            <li class="nav-item">Telegram<a href="https://t.me/h4x4d"
+                                            class="px-2 text-muted">@h4x4d</a></li>
+        </ul>
+    </footer>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
