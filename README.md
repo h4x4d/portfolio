@@ -1,6 +1,12 @@
 # Portfolio
 
-To install dependencies:
+
+a) To install dependencies and run with Make utilit:
+``` 
+make run 
+```
+
+b) To install dependencies:
 ```
 pip install -r requirements.txt
 ```
